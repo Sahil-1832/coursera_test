@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Selectors</title>
+        <style>
+            .highlight{
+                background-color: bisque;
+            }
+            p.highlight{
+                font-style: italic;
+            }
+            .mainpoint.highlight{
+                color: blue;
+                background-color: aqua;
+            }
+            section>article{
+                color: orange;
+                background-color: blanchedalmond;
+            }
+            section>h2{
+                color: green;
+            }
+            section li{
+                color: darkorchid;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="highlight">Element with class selector</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero blanditiis obcaecati, quis deleniti voluptatum ipsa consequatur, vel iusto, nobis corrupti dicta. Voluptate suscipit esse, odio quidem repudiandae fugit minus sequi culpa consectetur similique aliquam nesciunt sit aliquid inventore. Odit esse ad impedit.</p>
+        <p class="highlight">This is p with class highlight</p>
+        <div class="mainpoint highlight">this is the mainpoint of the entire document</div>
+        <h1>Child Selector</h1>
+        <section>
+            <h2>Subheading</h2>
+            <div>
+                <article>
+                    Article inside div which is inside section
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>Subheading</h2>
+            <article>
+                Article direct child of section 
+            </article>
+        </section>
+        <h1>Decendant Selector</h1>
+        <section>
+            Table of contents
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </section>
+        <article>
+            Shoping List
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+            </ul>
+        </article>
+    </body>
+</html>
